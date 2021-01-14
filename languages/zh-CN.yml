@@ -1,0 +1,5 @@
+postTotal: 共计 %d 篇文章
+
+paginator:
+  perv: "<"
+  next: ">"

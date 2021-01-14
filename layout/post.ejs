@@ -1,0 +1,36 @@
+<section class="animate__animated animate__fadeInLeft">
+    <nav>
+        <div class="aTitle">
+            <p><%- page.title %></p>
+            <% if(theme.time_format.division === "" || theme.time_format.division === null){ %>
+                <% theme.time_format.division = " " %>
+            <% } %>
+            <i><%- page.date.format(theme.time_format.date_format + theme.time_format.division + theme.time_format.time_format) %></i>
+        </div>
+        <%- page.content %>
+        <div class="pagination">
+            <%- paginator({ total: Math.ceil(site.posts.length / config.index_generator.per_page), prev_text: __('paginator.perv'), next_text: __('paginator.next')}) %>
+        </div>
+
+        
+        <div class="criterion">
+            <p><strong>本文链接：</strong><a href="<%- page.permalink %>"><%- page.permalink %></a></p>
+            <p><strong>本文更新于：</strong><%- page.updated.format(theme.time_format.date_format + theme.time_format.division + theme.time_format.time_format) %></p>
+            <p><strong>小站声明：</strong><%- theme.website_notice.txt %></p>
+        </div>
+        <div class="pn">
+            <% if(page.prev){ %>
+            <a class="left" href="<%- url_for(page.prev.path) %>">
+                <i><</i>
+                <span><%= page.prev.title %></span>
+            </a>
+            <% } %>
+            <% if(page.next){ %>
+            <a class="right" href="<%- url_for(page.next.path) %>">
+                <span><%= page.next.title %></span>
+                <i>></i>
+            </a>
+            <% } %>
+        </div>
+    </nav>
+</section>

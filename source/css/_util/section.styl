@@ -1,0 +1,157 @@
+section{
+	margin: 0 20px;
+}
+section>nav{
+	width: 100%;
+	max-width: 666px;
+	margin: auto;
+}
+section p,ul li,ol li,ul li a,ol li a,h1,h2,h3,h4,h5,h6{
+	margin: 8px 0;
+}
+// section>nav>i{
+// 	display: inline-block;
+// 	font-style: normal;
+// 	font-size: 20px;
+//     	margin: 20px 0 5px 0;
+// 	padding: 2px 4px;
+// 	background-color: var(--i);
+// 	color: white;
+// 	border-radius: 4px;
+// }
+// section>nav>iframe{
+// 	display: block;
+// 	width: 100%;
+// 	height: 400px;
+// }
+section>nav>.article {
+	padding: 30px 0;
+	cursor pointer
+	border-bottom: 1px solid #e6e6e6;
+	position relative
+	font-weight: 300;
+}
+section>nav>.article:hover .title{
+	color: #3742fa;
+}
+section>nav>.article>span{
+	display: block;
+}
+section>nav>.article>.tim{
+	position: absolute;
+	top: 35px;
+	right: 0;
+	font-size: 13px;
+}
+section>nav>.article>.title{
+	margin-right: 90px;
+	transition: all 0.2s;
+	font-size: 20px;
+}
+section>nav>.article>.url{
+	display inline-block
+	width 100%
+	height 100%
+	position absolute
+	top 0
+	left 0
+	z-index 999
+}
+
+section>nav>.aTitle {
+    margin: 30px 0 20px 0;
+}
+section>nav>.aTitle>p {
+	font-size: 25px;
+}
+section>nav>.aTitle>i {
+	font-size: 12px;
+	font-style: normal;
+}
+section>nav>.aTitle::before {
+	content: "";
+}
+section>nav>.aTitle::after {
+	content: "";
+}
+section>nav img{
+	width: 100%	
+}
+section .criterion{
+	font-size: 14px
+	border-left: 5px solid #c9c9c9;
+	padding: 5px 20px;
+    background-color: var(--article-background-color);
+    color: var(--color);
+	margin: 30px 0 0 0;
+	word-break: break-all;
+}
+section .criterion a{
+	display inline;
+}
+blockquote {
+	border-left: 5px solid #3742fa;
+	padding: 5px 20px;
+    background-color: var(--article-background-color);
+    color: var(--color);
+	margin: 30px 0 0 0;
+	word-break: break-all;
+}
+code{
+	background-color: var(--article-background-color);
+    border-radius: 3px;
+    font-size: 85%;
+    margin: 0.4em;;
+    padding: .2em .4em;
+	color: red;
+}
+
+.pagination{
+	text-align: center;
+	margin: 20px 0;
+}
+.pagination>a{
+    padding: 5px 10px;
+    margin-right: 10px;
+	border-radius: 4px;
+}
+.pagination>.space{
+	padding: 5px 10px;
+    margin-right: 10px;
+	border-radius: 4px;
+}
+.pagination>.current{
+    padding: 5px 10px;
+    margin-right: 10px;
+	border-radius: 4px;
+}
+.pagination>a:hover{
+	color: var(--color);
+}
+.pn{
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	margin: 10px 0 0 0;
+}
+.pn>a{
+	position: absolute;
+	max-width: 40%;
+	display: inline-flex;
+}
+.pn>a>span{
+	display: inline-block;
+	width: 100%;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.pn>a>i{
+	font-style: normal;
+}
+.pn>.left{
+	left: 0;
+}
+.pn>.right{
+	right: 0;
+}

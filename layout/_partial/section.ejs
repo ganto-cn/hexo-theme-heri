@@ -1,0 +1,17 @@
+<section>
+    <nav>
+        <% let anima = 0.1 %>
+        <% page.posts.sort("date", "desc").each(function(post){ %>
+            <% var a = "animation-delay:" + anima + "s;"; %>
+            <div class="article animate__animated animate__flipInY" style = <%= a %> >
+                <a class="url" href="<%- config.root %><%- post.path %>"></a>
+                <span class="title"><%- post.title %></span>
+                <span class="tim"><%- post.date.format(theme.time_format.date_format) %></span>
+            </div>
+            <% anima+=0.1 %>
+        <% }) %>
+        <div class="pagination animate__animated animate__zoomInUp">
+            <%- paginator({ total: Math.ceil(site.posts.length / config.index_generator.per_page), prev_text: __('paginator.perv'), next_text: __('paginator.next')}) %>
+        </div>
+    </nav>
+</section>
