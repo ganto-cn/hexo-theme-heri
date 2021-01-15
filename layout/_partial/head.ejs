@@ -24,6 +24,7 @@
     <script src="/lib/jquery.fancybox.min.js"></script>
     <script>
         $(function(){
+            $("figure").addClass("hljs");
             $("section img").each(function(){
                 $(this).wrap("<a data-fancybox='images' href='"+ $(this).attr('src') +"'>");
             })
