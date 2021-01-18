@@ -1,1 +1,1 @@
-请在你的Hexo中引用Heri。
+在你的Hexo中引用Heri。
