@@ -1,2 +1,1 @@
-# hexo-theme-heri
-hexo-theme-heri
+请在你的Hexo中引用Heri。
