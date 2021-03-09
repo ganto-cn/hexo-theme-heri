@@ -1,1 +1,3 @@
-在你的Hexo中引用Heri。
+[Download](https://github.com/ganto-cn/hexo-theme-heri/releases)
+Quote Heri in your Hexo.
+Everything looks so good!!!
