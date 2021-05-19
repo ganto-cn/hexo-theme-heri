@@ -1,0 +1,16 @@
+# 网站icon
+favicon: /images/g.png # 网站的icon
+
+# 日期/时间格式
+time_format:
+  date_format: YYYY-MM-DD
+  time_format: HH:mm:ss
+  division: "" # 日期与时间中间的间隔，如：division: "/" ===>>> 2020-20-20/20:20:20
+
+# 网站声明
+website_notice:
+  txt: 如果你需要“转载”、“引用”小站的文章，可以不需要作者同意，请务必标明出处和文章链接。 # 文章末尾处的声明文字
+
+
+
+
